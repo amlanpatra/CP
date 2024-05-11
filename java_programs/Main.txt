@@ -1,0 +1,123 @@
+import java.util.*;
+
+public class Main {
+
+    public static class Node {
+        int data;
+        ArrayList<Node> children = new ArrayList<Node>();
+
+        Node(int val) {
+            this.data = val;
+        }
+    }
+
+    public static void levelOrder(Node root) {
+        Queue<Node> queue = new ArrayDeque<Node>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            Node temp = queue.remove();
+            System.out.print(temp.data + " ");
+            for (Node node : temp.children) {
+                queue.add(node);
+            }
+        }
+        System.out.println(".");
+    }
+
+    public static void levelOrderLinewise(Node root) {
+        Queue<Node> queue = new ArrayDeque<Node>();
+        Queue<Node> cqueue = new ArrayDeque<Node>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node temp = queue.remove();
+            System.out.print(temp.data + " ");
+
+            for (Node child : temp.children) {
+                cqueue.add(child);
+            }
+            if (queue.isEmpty()) {
+                queue = cqueue;
+                cqueue = new ArrayDeque<>();
+                System.out.println(".");
+            }
+        }
+    }
+
+    public static void levelOrderLinewiseZigzag(Node root) {
+        Deque<Node> queue = new ArrayDeque<Node>();
+        Deque<Node> cqueue = new ArrayDeque<Node>();
+
+        queue.add(root);
+        int decider = 1;
+        while (!queue.isEmpty()) {
+            if (decider == 1) {
+                Node temp = queue.remove();
+
+                System.out.print(temp.data + " ");
+                for (Node n : temp.children) {
+                    cqueue.add(n);
+                }
+                if (queue.isEmpty()) {
+                    queue = cqueue;
+                    cqueue = new ArrayDeque<Node>();
+                    System.out.println();
+                    decider *= -1;
+                }
+            }
+
+            else {
+                Node temp = queue.removeLast();
+
+                System.out.print(temp.data + " ");
+                for (Node n : temp.children) {
+                    cqueue.addFirst(n);
+                }
+                if (queue.isEmpty()) {
+                    queue = cqueue;
+                    cqueue = new ArrayDeque<Node>();
+                    System.out.println();
+                    decider *= -1;
+                }
+            }
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        Node root = new Node(12);
+        Node ten = new Node(10);
+        Node twenty = new Node(20);
+        Node thirty = new Node(30);
+        Node forty = new Node(40);
+        Node fifty = new Node(50);
+        Node sixty = new Node(60);
+        Node seventy = new Node(70);
+        Node eighty = new Node(80);
+        Node ninety = new Node(90);
+        Node hundred = new Node(100);
+
+        root.children.add(ten);
+        root.children.add(twenty);
+        root.children.add(thirty);
+        root.children.add(forty);
+
+        twenty.children.add(fifty);
+        twenty.children.add(sixty);
+
+        forty.children.add(seventy);
+        forty.children.add(eighty);
+
+        fifty.children.add(ninety);
+        eighty.children.add(hundred);
+
+        // levelOrder(root);
+        // System.out.println();
+        levelOrderLinewise(root);
+        System.out.println();
+        levelOrderLinewiseZigzag(root);
+
+    }
+}

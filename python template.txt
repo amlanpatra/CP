@@ -1,0 +1,22 @@
+void run()
+{
+	#ifndef RUN
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	#endif 
+}
+
+
+#import sys
+#sys.stdin = open('input.txt', 'r') 
+#sys.stdout = open('output.txt', 'w') 
+
+
+
+Python3
+import time
+start  = time.clock()
+...
+end = time.clock()
+total = end - start
+print("Total time : %.7f"%total)

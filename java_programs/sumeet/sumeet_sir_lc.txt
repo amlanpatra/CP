@@ -1,0 +1,79 @@
+Arrays and Strings
+
+27.7.22
+
+lc 829 https://leetcode.com/problems/consecutive-numbers-sum/
+lc 838 https://leetcode.com/problems/push-dominoes/
+lc 53 kadanes
+lc 152 maximum product subarray
+lc 204 https://leetcode.com/problems/count-primes/ (sieve of eratosthenes)
+
+
+28.7.22
+lc 1031 https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/ (9pm)
+lc 42 https://leetcode.com/problems/trapping-rain-water/ (10:20pm) (min(left side tallest - right_side_tallest) - self_height)
+lc 56 https://leetcode.com/problems/merge-intervals/ (11:20pm)
+
+29.7.22
+lc 891 https://leetcode.com/problems/sum-of-subsequence-widths/ (9pm)
+lc 452 https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/ (9:30pm)
+lc 134 https://leetcode.com/problems/gas-station/ (10pm)
+lc 239 https://leetcode.com/problems/sliding-window-maximum/ (10:40pm)
+lc 628 https://leetcode.com/problems/maximum-product-of-three-numbers/ (11:38pm)
+
+31.7.22
+https://www.interviewbit.com/problems/balance-array/ (9:12pm)
+lc 853 https://leetcode.com/problems/car-fleet/ (9:28pm)
+
+16.8.22
+https://www.lintcode.com/problem/903/
+https://www.lintcode.com/problem/883/ (9:30pm)
+https://leetcode.com/problems/median-of-two-sorted-arrays/ (10:06pm) (https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1701107/Java-Binary-Search-Explained)
+https://www.lintcode.com/problem/919/ , https://www.lintcode.com/problem/920/ (11:15pm)
+https://practice.geeksforgeeks.org/problems/wave-array-1587115621/1 (wiggle sort in leetcode) (11:37pm)
+
+
+17.8.22
+segment tree : https://leetcode.com/problems/range-sum-query-mutable/ (9:32pm)
+z algorithm
+
+18.8.22
+https://www.codechef.com/COOK103B/problems/SECPASS (string z array) (9:10pm)
+https://leetcode.com/problems/sum-of-scores-of-built-strings/ (9:52pm)
+https://www.geeksforgeeks.org/find-the-minimum-cost-to-cross-the-river/ (10:12pm)
+https://leetcode.com/problems/majority-element-ii/ (10:50pm)
+https://leetcode.com/problems/search-in-rotated-sorted-array-ii/ (11:34pm)
+
+20.8.22
+fenwick tree (9:15pm - 9:40pm)
+https://leetcode.com/problems/range-sum-query-mutable/ (using fenwick tree)
+
+
+24.8.22
+dp
+https://leetcode.com/problems/longest-increasing-subsequence/ (9:00pm)
+https://www.geeksforgeeks.org/dynamic-programming-building-bridges/ (9:30pm)
+https://leetcode.com/problems/russian-doll-envelopes/ (10:43pm)
+https://practice.geeksforgeeks.org/problems/box-stacking/1 (11:05pm)
+lc 1235
+https://www.geeksforgeeks.org/minimum-number-of-increasing-subsequences/ (11:20pm)
+
+
+1.9.22
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ (9:10pm)
+https://pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/tiling1-official/ojquestion (10:15pm)
+https://pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/tiling2-official/ojquestion (10:32pm)
+https://pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/friends-pairing-official/ojquestion (10:51pm)
+https://pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/partition-into-subsets-official/ojquestion (11:12pm)
+dp and Stack/Queue combined
+https://leetcode.com/problems/daily-temperatures/ (11:45pm)
+
+
+2.9.22
+https://www.geeksforgeeks.org/find-maximum-difference-between-nearest-left-and-right-smaller-elements/ (9:31pm)
+https://www.geeksforgeeks.org/find-maximum-difference-between-nearest-left-and-right-smaller-elements/ (9:31pm)
+https://www.geeksforgeeks.org/find-maximum-difference-between-nearest-left-and-right-smaller-elements/ (9:45pm)
+https://www.geeksforgeeks.org/find-maximum-difference-between-nearest-left-and-right-smaller-elements/ (10:04pm)
+SnQ = https://leetcode.com/problems/maximal-rectangle/ (10:30pm)
+
+

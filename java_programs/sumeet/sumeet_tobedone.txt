@@ -1,0 +1,4 @@
+27.7.22
+lc 829 https://leetcode.com/problems/consecutive-numbers-sum/
+lc 838 https://leetcode.com/problems/push-dominoes/
+
